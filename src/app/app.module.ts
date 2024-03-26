@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RoundBlockDirective } from './round-block.directive';
+import { ListaAComponent } from './lista-a/lista-a.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RoundBlockDirective,
+    ListaAComponent
   ],
   imports: [
     BrowserModule,
