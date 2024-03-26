@@ -14,16 +14,13 @@ Mostrar Lista de estudiantes recientes
 >
 Cambiar Color
 </button>
-<button (click)="cambiarTama()">
-Cambiar tamaño
-</button>
-
 
 <div *ngIf="mostrarLista"
 [ngClass]="colorChange ? 'rojo' : 'verde'"
 >
 <li 
-*ngFor="let estudiante of ['Thomas', 'Lisandro', 'Ulises', 'Uriel']" ngIf="tamaAlt"
+*ngFor="let estudiante of ['Thomas', 'Lisandro', 'Ulises', 'Uriel']"
+[style.font-weight]="'bold'"
 [style.margin-top]="'10px'"
 [style.list-style]="'none'"
 >
